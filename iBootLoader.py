@@ -22,18 +22,7 @@ if len(argv) == 1:
         parser.print_help(sys.stderr)
         sys.exit(1)
 
-system("rm -rf ibss.pwn")
-system("rm -rf ibss.im4p")
-system("rm -rf ibss.img4")
 
-system("rm -rf ibec.dec")
-system("rm -rf ibec.pwn")
-system("rm -rf ibec.im4p")
-system("rm -rf ibec.img4")
-
-system("rm -rf logo.im4p")
-system("rm -rf logo.img4")
-system("rm -rf logo_ok_bommer_lmfao")
 
 print(Pink + "Pathing iBSS and iBEC" + CEND)
 
