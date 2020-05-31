@@ -65,7 +65,7 @@ if args.logo:
     system("bin/img4tool -p logo.im4p -c logo.img4 -s " + shsh_path)
     print(Pink + "Sending custom logo :)" + CEND)
     system("bin/irecovery -f logo.img4")
-    system('bin/irecovery -c "bgcolor 0 0 0" ')
+    system('bin/irecovery -c "bgcolor 250 0 250" ')
     system('bin/irecovery -c "setpicture 1" ')
     print(Pink + "Enjoy:)" + CEND)
 
