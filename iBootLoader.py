@@ -50,11 +50,15 @@ if args.ibec and args.shsh and args.nopatch:
     ibec_path = str(args.ibec)
     system("bin/img4tool -c ibec.im4p --type ibec --desc ibec " + ibec_path)
     system("bin/img4tool -p ibec.im4p -c ibec.img4 -s " + shsh_path)
+else:
+     print(Pink + "Nopatch funtion disabled. Continiung..." + CEND)
 if args.ibec and args.shsh and args.patch:
     ibec_path = str(args.ibec)
     system("bin/kairos " + ibec_path + " ibec.pwn")
     system("bin/img4tool -c ibec.im4p --type ibec --desc ibec ibec.pwn")
     system("bin/img4tool -p ibec.im4p -c ibec.img4 -s " + shsh_path)   
+else:
+     print(Pink + "patch funtion disabled. Still Continiung..." + CEND)   
 
 print(Pink + "About to load iBSS and iBEC" + CEND)
 system("bin/irecovery -f ibss.img4")
