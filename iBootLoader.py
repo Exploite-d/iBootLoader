@@ -55,6 +55,7 @@ if args.ibec and args.shsh and args.patch:
 print(Pink + "About to load iBSS and iBEC" + CEND)
 system("bin/irecovery -f ibss.img4")
 system("bin/irecovery -f ibec.img4")
+system('bin/irecovery -c "bgcolor 250 0 250" ')
 print(Pink + "Done! iBoot has been succesfully loaded. You can now load unsigned images or other cool stuff :)" + CEND)
 
 if args.logo:
@@ -65,7 +66,6 @@ if args.logo:
     system("bin/img4tool -p logo.im4p -c logo.img4 -s " + shsh_path)
     print(Pink + "Sending custom logo :)" + CEND)
     system("bin/irecovery -f logo.img4")
-    system('bin/irecovery -c "bgcolor 250 0 250" ')
     system('bin/irecovery -c "setpicture 1" ')
     print(Pink + "Enjoy:)" + CEND)
 
