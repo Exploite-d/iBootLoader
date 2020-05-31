@@ -13,7 +13,6 @@ print(Pink + "iBootLoader allows you to automatically patch iBSS and iBEC and lo
 parser = argparse.ArgumentParser()
 parser.add_argument("--ibss", help="Specify path to decrypted iBSS image.")
 parser.add_argument("--ibec", help="Specify path to decrypted iBEC image.")
-parser.add_argument("--bootargs", "-b", help="Specify boot-args(if you want to).")
 parser.add_argument("--shsh", "-s", help="Specify path to your SHSH Blobs.")
 parser.add_argument("--nopatch", "-n", help="Use if you are trying to load iOS 9 iBoot(but specify ibss path to iOS 10+ image).")
 parser.add_argument("--logo", "-l", help="Use if you are trying to load iOS 9 iBoot(but specify ibss path to iOS 10+ image).")
